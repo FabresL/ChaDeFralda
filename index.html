@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/Ursinha_Isabel.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Chá de Fraldas da Isabel!</title>
+</head>
+<body>
+
+    <div class="chegada-isabel">
+        <img src="assets/Ursinha_Isabel.png" alt="Ursinha da Isabel" class="Ursinha">
+        <h1>
+        <span>Isabel</span><br>
+        está chegando!
+        </h1><br>
+        <p>
+        E com ela, um novo capítulo cheio de amor começa para nós. <br>
+        e queremos muito compartilhar esse momento <br>
+        tão especial com você. <br><br>
+
+        Preparamos um chá de fraldas para<br>
+        celebrar a chegada da nossa pequena<br>
+        junto de pessoas queridas.<br><br>
+        <span>Papai Lorenzo & Mamãe Juliane</span></p>
+    </div>
+
+    <div class="conteudo-principal">
+
+        <div class="coluna-esquerda">
+            <div class="localizacao">
+                <img src="assets/localizaçãoMapa.png" alt="localizacao" class="iconeLocalizacao">
+                <h2>Local do Evento</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.682889110204!2d-51.152234025563416!3d-30.017260630014405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519777577bb9945%3A0x951e4ed9165ecc0!2sR.%20Ant%C3%B4nio%20Joaquim%20Mesquita%2C%20570%20-%20Passo%20d'Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091350-180!5e0!3m2!1spt-BR!2sbr!4v1790541623774!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <p>
+                <span>Um dia especial está chegando!</span><br>
+                07 de Novembro às 16h<br>
+                Rua Antônio Joaquim Mesquita, 570<br>
+                Rossi Passeio - Salão de Eventos
+                </p>
+            </div>
+        </div>
+
+        <div class="coluna-direita">
+            <div class="presentes">
+                <img src="assets/presente.png" alt="presentes da Isabel" class="mimos">
+                <h2>O que a Isabel vai precisar</h2>
+                <h3>Fraldas Pampers Dia e Noite</h3>
+                <p>Tamanhos: M ou G</p>
+                <h3>Mimos para a Isabel:</h3>
+                <p>Se quiser presentear nossa pequena, roupinhas, brinquedinhos e outros mimos serão recebidos com muito carinho!</p>
+            </div>
+
+            <div class="convidados">
+                <h2>CONFIRME SUA PRESENÇA</h2>
+                <input id="btn-name" type="text" placeholder="Digite o seu nome" required>
+                <input id="btn-confirmar" type="button" value="CONFIRMAR">
+            </div>
+
+            <div class="recados">
+                <h2>RECADINHO PARA A ISABEL</h2>
+                <p>Deixe seu recado para a Isabel:</p>
+                <div class="linha-recado">
+                    <textarea id="recado" placeholder="Escreva um recado..." rows="3" maxlength="120"></textarea>
+                    <input type="button" value="ENVIAR RECADO">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>

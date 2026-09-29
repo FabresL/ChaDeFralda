@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    cursor: default;
+    color: #5C3A32;
+    background-image: url('../assets/fundoRosa.png');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #ffeaf2;
+    min-height: 100vh;
+}
+
+h2 {
+    color: rgb(182, 0, 91);
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 13px;
+}
+
+.chegada-isabel {
+    text-align: center;
+    color: rgb(182, 0, 91);
+    padding: 20px;
+}
+
+.Ursinha {
+    width: 220px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.chegada-isabel h1 {
+    font-size: 40px;
+}
+
+.chegada-isabel h1 span {
+    font-size: 120px;
+    color: rgb(255, 143, 199);
+    cursor: pointer;
+    font-family: "Great Vibes", cursive;
+}
+
+.chegada-isabel p {
+    margin-top: 270px;
+    color: #5C3A32;
+    font-size: 20px;
+}
+
+.chegada-isabel p span {
+    color: #272321;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.conteudo-principal {
+    margin-top: 440px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.coluna-esquerda {
+    width: 100%;
+    padding: 20px 40px 20px 10px;
+    max-width: 600px;
+}
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.localizacao {
+    color: #4A302A;
+    text-align: left;
+}
+
+.localizacao h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.localizacao p {
+    margin-left: 0px;
+}
+
+.localizacao p span {
+    font-weight: bold;
+}
+
+.iconeLocalizacao {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.localizacao iframe {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    height: 300px;
+    border: 0;
+    box-shadow: 0 8px 20px rgba(179, 47, 113, 0.4);
+}
+
+.presentes {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.presentes img {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.presentes h2 {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+.presentes h3 {
+    padding-top: 18px;
+}
+
+.convidados {
+    text-align: left;
+}
+
+.convidados h2 {
+    margin-bottom: 10px;
+}
+
+.convidados input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 69%;
+}
+
+.convidados input[type="button"] {
+    padding: 8px 15px;
+    background-color: rgb(182, 0, 91);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 146px;
+    margin-left: 4px;
+}
+
+.convidados input[type="button"]:hover {
+    background-color: rgb(255, 143, 199);
+    transition: 0.4s;
+}
+
+.recados {
+    text-align: left;
+}
+
+.linha-recado {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 10px;
+}
+
+.recados textarea {
+    flex: 1;
+    max-width: 450px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    height: 37px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.recados input[type="button"] {
+    padding: 8px 15px;
+    background-color: rgb(182, 0, 91);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recados input[type="button"]:hover {
+    background-color: rgb(255, 143, 199);
+    transition: 0.4s;
+}
+
+.lista-convidados {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+}
+
+.lista-convidados h2 {
+    margin-bottom: 10px;
+}
+
+#listaConvidados {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+/* ===== RESPONSIVO (só telas menores que 900px) ===== */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .Ursinha {
+        margin-top: 200px;
+        width: 180px;
+    }
+
+    .chegada-isabel h1 {
+        font-size: 32px;
+    }
+
+    .chegada-isabel h1 span {
+        font-size: 90px;
+    }
+
+    .chegada-isabel p {
+        margin-top: 60.5vw;
+        font-size: 17px;
+    }
+
+    .chegada-isabel p span {
+        font-size: 19px;
+    }
+
+    .conteudo-principal {
+        margin-top: 62vw;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .coluna-esquerda {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .coluna-direita {
+        max-width: 100%;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .Ursinha {
+        margin-top: 70px;
+        width: 160px;
+        margin-bottom: 30px;
+    }
+
+    .chegada-isabel h1 {
+        font-size: 24px;
+    }
+
+    .chegada-isabel h1 span {
+        font-size: 64px;
+    }
+
+    .chegada-isabel p {
+        margin-top: 470px;
+        font-size: 14px;
+    }
+
+    .chegada-isabel p span {
+        font-size: 16px;
+    }
+
+    .conteudo-principal {
+        margin-top: 440px;
+        padding: 15px;
+    }
+
+    .localizacao iframe {
+        height: 240px;
+    }
+
+    .convidados input[type="text"] {
+        width: 100%;
+    }
+
+    .convidados input[type="button"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .linha-recado {
+        flex-direction: column;
+    }
+
+    .recados textarea {
+        max-width: 100%;
+        height: 70px;
+    }
+
+    .recados input[type="button"] {
+        width: 100%;
+    }
+}
